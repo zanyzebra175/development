@@ -1,38 +1,158 @@
+/* Add styling for your page here */
+
 .App {
+  background-color: lightcyan;
+}
+
+.BasketballItem {
+  justify-content: center;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h3{
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+select{
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  display: block;
+  margin: 0 auto;
 }
 
-.App-link {
-  color: #61dafb;
+.items{
+  width: 18%;
+  padding: 20px;
+  margin: 2%;
+  border: 1px solid #d9d9d9;
+  border-radius: 20px;
+  text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.cart{
+  padding: 20px;
+  width: 50%;
+  margin: auto;
+  margin-bottom: 50px;
+  margin-top: 20px;
+  background-color: lavender;
+  text-align: center;
+}
+
+h1{
+  padding: 20px;
+  width: 20%;
+  margin: auto;
+  margin-bottom: 20px;
+  border: 0px solid #d9d9d9;
+  border-radius: 20px;
+  background-color: lightskyblue;
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.addButton{
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.subtractButton {
+  width: 10px;
+  background-color: black;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 30px;
+  line-height: 15px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 5px 10px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.resetButton {
+  width: 10px;
+  background-color: black;
+  border-radius: 8px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 30px;
+  line-height: 15px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 5px 10px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  justify-content: center;
+  display: block;
+  margin: 0 auto;
+}
+
+
+button:hover {
+  background-color: gray;
+}
+
+button:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  button {
+    min-width: 120px;
+    padding: 0 25px;
   }
 }
+
